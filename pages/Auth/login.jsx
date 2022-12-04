@@ -3,8 +3,9 @@ import { Form } from "react-bootstrap";
 import styles from "../../styles/Login.module.css";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
-
+import {useRouter} from "next/router"
 function Login() {
+  const router = useRouter()
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,7 +14,10 @@ function Login() {
       password: userInfo.password,
       redirect: false,
     });
-    console.log(res)
+    // console.log(res)
+    if(res){
+      router.push("/home")
+    }
   };
   return (
     <>
@@ -51,7 +55,7 @@ function Login() {
                 Submit
               </button>
             </div>
-            <p className="forgot-password text-center mt-3">
+            <p className="text-center mt-3">
               Don't have Account? <a href="/signUp">Create Account</a>
             </p>
           </div>
