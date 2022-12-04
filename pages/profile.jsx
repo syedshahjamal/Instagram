@@ -20,7 +20,7 @@ const profile = () => {
             <hr />
             <div class="d-flex flex-row justify-content-center align-items-center mt-3">
               <span class="number">
-                1069 <span class="follow">Followers</span>
+                106<span class="follow">Followers</span>
               </span>
             </div>
             <div class=" d-flex mt-2">
