@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 const profile = () => {
   return (
     <>
+    
       <Navbar />
       <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
         <div class="card p-4 bg-secondary">
