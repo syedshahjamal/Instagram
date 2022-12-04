@@ -23,7 +23,7 @@ function Login() {
           <div className={styles.formContent}>
             <h3>Sign In</h3>
             <div className="form-group mt-3">
-              <label>Email address</label>
+              <label>Email Address</label>
               <input
                 type="email"
                 className="form-control mt-1"
